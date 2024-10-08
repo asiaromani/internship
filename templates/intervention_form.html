@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block title %}New Intervention{% endblock %} {%
+block content %}
+<h1>Add New Intervention</h1>
+<form method="POST">
+  {{ form.hidden_tag() }} {{ form.date.label }} {{ form.date() }}<br />
+  {{ form.provider.label }} {{ form.provider(size=32) }}<br />
+  {{ form.is_valid.label }} {{ form.is_valid() }}<br />
+  {{ form.market_id.label }} {{ form.market_id(size=32) }}<br />
+  {{ form.submit() }}
+</form>
+{% endblock %}

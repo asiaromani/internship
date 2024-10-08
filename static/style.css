@@ -1,0 +1,180 @@
+/* Existing CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #50adc5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #50adc5;
+}
+
+/* New CSS for tables */
+
+/* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Table header styling */
+th {
+    background-color: #50adc5; /* Green background */
+    color: white; /* White text */
+    padding: 12px;
+    text-align: center;
+}
+
+/* Table cell styling */
+td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 12px;
+    text-align: center;
+}
+
+/* Table row styling */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+tr:hover {
+    background-color: #ddd; /* Darker gray background on hover */
+}
+
+/* Table header row styling */
+thead tr {
+    border-bottom: 2px solid #50adc5; /* Green border under the header */
+}
+
+/* Additional styling for table containers */
+.table-container {
+    overflow-x: auto; /* Allows horizontal scrolling if necessary */
+    margin-bottom: 20px;
+}
+/* Additional CSS for Edit and Delete buttons */
+button.edit, button.delete {
+    background-color: #4CAF50; /* Default green background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.edit {
+    background-color: #2196F3; /* Blue background for Edit */
+}
+
+button.delete {
+    background-color: #f44336; /* Red background for Delete */
+}
+
+button.edit:hover {
+    background-color: #1E88E5; /* Darker blue on hover */
+}
+
+button.delete:hover {
+    background-color: #c62828; /* Darker red on hover */
+}
+
+/* Style for links styled as buttons */
+a.button {
+    background-color: #4CAF50; /* Default green background */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a.button.edit {
+    background-color: #2196F3; /* Blue background for Edit */
+}
+
+a.button.delete {
+    background-color: #f44336; /* Red background for Delete */
+}
+
+a.button.edit:hover {
+    background-color: #1E88E5; /* Darker blue on hover */
+}
+
+a.button.delete:hover {
+    background-color: #c62828; /* Darker red on hover */
+}

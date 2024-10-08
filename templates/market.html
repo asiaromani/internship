@@ -1,0 +1,9 @@
+{% extends "base.html" %} {% block title %}market{% endblock %} {% block content
+%}
+<h1>Markets</h1>
+<form method="POST">
+  {{ form.hidden_tag() }} {{ form.name.label }} {{ form.name() }}<br />
+  {{ form.description.label }} {{ form.description() }}<br />
+  {{ form.submit() }}
+</form>
+{% endblock %}

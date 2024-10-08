@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block title %}Intervention List{% endblock %} {%
+block content %}
+<div class="container">
+  <h1>Intervention List</h1>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Date</th>
+          <th>Provider</th>
+          <th>Is Valid</th>
+          <th>Market ID</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for intervention in interventions %}
+        <tr>
+          <td>{{ intervention.id }}</td>
+          <td>{{ intervention.date }}</td>
+          <td>{{ intervention.provider }}</td>
+          <td>{{ intervention.is_valid }}</td>
+          <td>{{ intervention.market_id }}</td>
+          <td>
+            <a
+              href="{{ url_for('edit_intervention', id=intervention.id) }}"
+              class="button edit"
+              >Edit</a
+            >
+            <a
+              href="{{ url_for('delete_intervention', id=intervention.id) }}"
+              class="button delete"
+              >Delete</a
+            >
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
